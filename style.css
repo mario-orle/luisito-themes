@@ -1,0 +1,310 @@
+/*
+Theme Name: portal_propietario
+Theme URI: 
+Author: myp
+Author URI:
+Description: portal_propietario
+Version: 1.0
+*/
+
+a {
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+.header{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: calc(100% - 240px);
+    height: 100px;
+    background-color: white;
+    display: flex;
+    justify-content: flex-end;
+    box-shadow: 0px 2px 7px 1px rgba(0,0,0,0.77);
+    z-index: 100;
+    }
+    body {
+    font-family: "Roboto";
+    margin: auto;
+    background: #ebedf0;
+    user-select: none;
+    }
+      
+    h2{
+    text-align: center; 
+    color:white;
+    }
+    .menu span{
+    color:white;
+    }
+    
+    .logo{
+    width: 200px;
+    height: 75px;
+    background-image: url(logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 40px;
+    cursor: pointer;
+    }
+    
+    .header .right {
+    display: flex;
+    margin-top: 25px;
+    margin-right: 25px;
+    justify-content: space-between;
+    width: 220px;
+    }
+    #usuario{
+    display: block;
+    }
+    #usuario img{
+    width: 50px;
+    }
+    #alertas{
+    display: block;
+    }
+    #alertas img{
+    width: 30px; 
+    margin-top:10px;
+    }
+    .mensajes-wrapper.unread {
+        position: relative;
+    }
+    .mensajes-wrapper.unread::after {
+        position: absolute;
+        top: 10px;
+        right: -5px;
+        width: 10px;
+        height: 10px;
+        display: block;
+        background-color: red;
+        border-radius: 100%;
+        content: "";
+    }
+    #mensajes{
+    display: block;
+    }
+    #mensajes img{
+    width: 30px;
+    margin-top:10px;
+    }
+    
+    #alerta-asesor{
+    display: block;
+    }
+    #alerta-asesor img{
+    margin-top:10px;
+    width: 30px;
+    }
+    
+    .menu {
+    padding: 20px;
+    padding-top: 20px;
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color:  #323a48;
+    overflow: auto;
+    overflow-x: hidden;
+    padding-top: 20px;
+    box-shadow: 0px 2px 7px 1px rgba(0,0,0,0.77);
+    font-family: "roboto";
+    }
+    
+    .menu a, .dropdown-btn, .menu span {
+    padding: 6px 8px 6px 8px;
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    }
+    
+    /* On mouse-over */
+    .menu a:hover, .dropdown-btn:hover {
+    color: orange;
+    }
+    .menu a i{
+        padding-right: 10px;
+        min-width: 20px;
+    }
+    
+    /* Main content */
+    .main {
+    margin-top: 100px;
+    margin-left: 245px;
+    padding: 20px;
+    font-family: "roboto";
+    }
+    
+    /* Add an active class to the active dropdown button */
+    .dropdown-btn.active {
+    background-color: grey;
+    color: white;
+    }
+    
+    /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+    .dropdown-container {
+    display: none;
+    background-color: #262626;
+
+    }
+  
+    /* Optional: Style the caret down icon */
+    .btn {
+    float: right;
+    padding-right: 8px;
+    }
+    .main .dataTable-sorter{
+        display: flex;
+        align-items: center;
+    }
+
+    .header .usuario, .header .alertas {
+        position: relative;
+    }
+    .header .usuario a, .header .alertas a {
+        cursor: pointer;
+    }
+    .header .usuario .cerrar-sesion, .header .alertas .alertas-msgs {
+        display: none;
+        position: absolute;
+        top: 50px;;
+        right: 0;
+        padding: 10px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        width: 150px;
+        user-select: none;
+    }
+    .header .usuario .cerrar-sesion.show , .header .alertas .alertas-msgs.show{
+        display: block;
+    }
+    .header .usuario .cerrar-sesion ul, .header .alertas .alertas-msgs ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    .header .usuario .cerrar-sesion ul li, .header .alertas .alertas-msgs ul li {
+        list-style: none;
+    }
+    .header .usuario .cerrar-sesion ul li:hover, .header .alertas .alertas-msgs ul li:hover {
+        background-color: #ccc;
+        cursor: pointer;
+    }
+    .header .usuario .cerrar-sesion ul li a, .header .alertas .alertas-msgs ul li a {
+        color: #000;
+        text-decoration: none;
+        padding: 5px;
+        display: block;
+    }
+}
+    #wpadminbar { display:none !important;}
+
+
+
+@media (max-width: 768px) {
+    body, html {
+        height: 100%;
+        margin: 0;
+        font-family: "ralewey";
+      }
+      .main{
+        color: black;
+        font-weight: bold;
+        position: fixed;
+        top: 110px;
+        left: 0px;
+        right: 0;
+        bottom: 0;
+        overflow: scroll;
+      }
+      
+      .header{
+        display: flex;
+        position: fixed;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        width: calc(100% - 20px);
+        padding: 10px;
+        background-color: black;
+        box-shadow: 1px 1px 20px 0px orange;
+        z-index: 10;
+      }
+      .header span{
+        font-size:18px;
+        cursor:pointer;
+        color: white;
+        margin-top: 20px;
+        margin-right: 10px;
+        
+      }
+      .header img{
+        width: 150px;
+        padding: 15px
+      }
+      
+      .bg-image {
+        display: flex;
+        background-image:  url("/wp-content/themes/portal_propietario/assets/img/edificio-fondo.jpg");
+        filter: blur(8px);
+        height: 100%; 
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      
+      .overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0, 0.9);
+        overflow-x: hidden;
+        transition: 0.5s;
+        
+      }
+      
+      .overlay-content {
+        position: relative;
+        top: 20%;
+        width: 100%;
+        text-align: center;
+      }
+      
+      .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+      }
+      
+      .overlay a:active, .overlay a:focus {
+        color: #f1f1f1;
+      }
+      
+      .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+      }
+      
+      
+      
+}

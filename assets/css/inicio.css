@@ -1,0 +1,214 @@
+.main-container{  
+display: inline;
+}
+.main-container hr{
+  color: rgb(255, 255, 255);
+}
+.main-container p{
+  text-align: center;
+  color: rgb(163, 163, 163);
+  text-decoration: none;
+ 
+}
+.main-container h2{
+  color: orange;
+  text-align: left;
+  
+}
+.texto-cabecera{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.estadisticas{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.estadisticas h2{
+  color: black;
+  text-align: center;
+  text-decoration: none;
+}
+.estadisticas button{
+  box-shadow:inset 0px 1px 0px 0px #c4c4c4;
+  background:linear-gradient(to bottom, #f9f9f9 5%, white 100%);
+  background-color:white;
+  border-radius:6px;
+  border:1px solid white;
+  display:inline-block;
+  cursor:pointer;
+  font-weight:bold;
+  padding:6px 24px;
+  text-decoration:none !important;
+  text-shadow:0px 1px 0px #ffffff;
+  height: 250px;
+  width: calc(100% - 40px);
+}
+.estadisticas button:hover {
+  background:linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
+  background-color:#e9e9e9;
+}
+.estadisticas button:active {
+  position:relative;
+  top:1px;
+}
+.estadisticas a:active{
+  text-decoration: none;
+}
+.estadisticas a:link{
+  text-decoration: none;
+}
+.estadisticas a:visited{
+  text-decoration: none;
+}
+
+.visualizaciones img{
+  width: 30%;
+  padding: 10px;
+  margin-top: 10px;
+}
+.visualizaciones button{
+  border-bottom: 5px solid orange;
+  box-shadow: 0 4px 8px 0 black;
+}
+
+.contacto-email img{
+  width: 30%;
+  padding: 10px;
+  margin-top: 10px;
+}
+.contacto-email button{
+  border-bottom: 5px solid yellow;
+  box-shadow: 0 4px 8px 0 black;
+}
+
+.calendario img{
+  width: 30%;
+  padding: 10px;
+  margin-top: 10px;
+}
+.calendario button{
+  border-bottom: 5px solid red;
+  box-shadow: 0 4px 8px 0 black;
+}
+
+.porcentaje-perfil img{
+  width: 34%;
+  padding: 10px; 
+}
+.citas img{
+  width: 34%;
+  padding: 10px; 
+}
+.citas button{
+  border-bottom: 5px solid blue;
+  box-shadow: 0 4px 8px 0 black;
+}
+.main-container-sub p{
+text-align: center;
+}
+.main-container-sub h2{
+color: orange;
+text-align: left;
+margin-top: 75px;
+}
+.main-container-sub hr{
+  color: rgb(255, 255, 255);
+}
+.estadisticas-sub{
+display: flex;
+flex-flow: column-reverse;
+justify-content: space-around;
+align-items: flex-start;
+width: 100%;
+margin-top: 65px;
+}
+
+
+/* revisar codigo para arriba */
+
+
+.main-up-inmuebles {
+  font-size: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "roboto ";
+  width: 100%;
+}
+.card-wrapper {
+  width: 350px;
+  padding: 10px;
+}
+
+.card-wrapper button {
+  width: 100%;
+  height: 100%;
+}
+
+.card-wrapper img {
+  margin-top: 8px;
+  border-radius: 5px;
+  width: 338px;
+  height: 190px;
+}
+
+.card-wrapper button {
+  background-color: #434b4d;
+  box-shadow: 0 8px 16px 0 rgb(0, 0, 0);
+  border: none;
+  border-radius: 5px;
+}
+
+.card-wrapper h4,
+p {
+  color: white;
+}
+
+.card-wrapper p {
+  font-style: italic
+}
+
+.card-wrapper h3 {
+  color: orange;
+}
+
+.card-wrapper button:hover {
+  box-shadow: 0px 0px 16px 0 rgba(255, 166, 0, 0.616);
+}
+.card-wrapper button a:active {
+  text-decoration: none;
+}
+
+.card-wrapper button a:link {
+  text-decoration: none;
+}
+
+.card-wrapper button a:visited {
+  text-decoration: none;
+}
+
+.precio-medio{
+padding: 10px;
+padding-top: 20px;
+background-color: white; 
+width: 100%;
+border-bottom: 5px solid #ffa600;
+border-radius: 6px;
+text-align: center;
+box-shadow: 0 4px 8px 0 black;
+height: 100%;
+}
+.precio-medio p {
+  color: #333;
+}
+.precio-medio img{
+width: 400px;
+padding: 10px;
+margin-top: 10px;
+}
+.precio-medio canvas {
+  margin: 20px;
+}

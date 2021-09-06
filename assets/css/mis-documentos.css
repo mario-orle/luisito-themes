@@ -1,0 +1,98 @@
+.botons {
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    width: 150px;
+    margin-top: 15px;
+    text-align: center;
+    margin-left: 20px;
+box-shadow: 0px 0px 0px 2px #777;
+background: linear-gradient(to bottom, rgb(128, 123, 123) 5%, rgb(65, 54, 54) 100%);
+background-color: #4c5463;
+border-radius: 5px;
+font-size: 13px;
+padding: 5px 15px;
+text-shadow: 0px 1px 0px #283966;
+overflow: hidden;
+text-overflow: ellipsis;
+}
+
+a.botons {
+    line-height: 25px;
+}
+
+.botons:hover {
+    background: linear-gradient(to bottom, rgb(252, 205, 119) 5%, rgb(252, 205, 119)100%);
+    background-color: orange;
+}
+
+.botons:active {
+    position: relative;
+    top: 1px;
+}
+
+.botons[disabled] {
+    cursor: not-allowed;
+}
+
+.main-documentos {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.documentos-descarga {
+    display: flex;
+    flex-flow: wrap;
+    background-color: white;
+    width: 100%;
+    max-width: 750px;
+    padding: 20px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.documentos-descarga-2 {
+    display: flex;
+    background-color: white;
+    width: 100%;
+    max-width: 750px;
+    padding: 20px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    margin-top: 15px;
+}
+
+.documentos-descarga h3 {
+    color: orange;
+}
+
+.documentos-descarga-2 h3 {
+    color: orange;
+}
+
+.text-documentos {
+    width: 800px;
+}
+
+.fila-documento {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.fila-documento-2 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+form {
+    display: inline;
+}

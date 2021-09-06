@@ -1,0 +1,584 @@
+.row {
+    display: flex;
+}
+
+.side {
+    width: 250px;
+    background-color: #8a9597;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 black;
+    height: 100%;
+    margin-top: 20px;
+    border: 5px ridge;
+}
+
+.main-perfil {
+    padding: 20px;
+}
+
+.main-datos {
+    display: flex;
+    background-color: white;
+    height: 350px;
+    padding: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    justify-content: space-around;
+    border-bottom: orange 3px solid;
+    border-radius: 3px;
+}
+
+.texto {
+    width: 450px;
+}
+
+.datos-inmuebles {
+    text-align: left;
+    margin-top: 75px;
+}
+
+.precios {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+}
+
+.venta {
+    background-color: #e4e4e4;
+    width: 200px;
+    height: 100px;
+    padding: 5px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.valoracion {
+    background-color: #e4e4e4;
+    width: 200px;
+    height: 100px;
+    padding: 5px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.fakeimg-perfil img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+}
+
+
+/* cambios inputs */
+
+.main-formulario {
+    display: flex;
+    flex-flow: column;
+}
+
+.main-formulario h2 {
+    text-align: left;
+    color: black;
+}
+
+.caracteristicas {
+    margin-top: 20px;
+    background-color: white;
+    padding: 15px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    border-bottom: orange 3px solid;
+    border-radius: 3px;
+}
+
+.localizacion {
+    margin-top: 20px;
+    background-color: white;
+    padding: 15px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    border-bottom: orange 3px solid;
+    border-radius: 3px;
+}
+
+.descripcion {
+    margin-top: 20px;
+    background-color: white;
+    padding: 15px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    height: 275px;
+    border-bottom: orange 3px solid;
+    border-radius: 3px;
+}
+
+.formulario {
+    font-size: 30px;
+    width: 300px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.formulario span {
+    padding: 10px;
+    color: black;
+}
+
+.formulario input:focus {
+    width: 600px;
+    height: 100px;
+    transition: all linear 0.8s;
+}
+
+.formulario input:focus+label {
+    font-size: 16px;
+    transition: all 0.8s;
+}
+
+.formulario input {
+    width: 350px;
+    height: 30px;
+    padding: 15px;
+    outline: none;
+    border: none;
+    background: transparent;
+    border-bottom: rgb(199, 199, 199) solid 3px;
+    font-size: 18px;
+}
+
+.formulario input:not(:placeholder-shown)+label {
+    font-size: 18px;
+}
+
+.formulario input:not(:placeholder-shown) {
+    width: 450px;
+    height: 60px;
+    padding: 40px 0 0 15px;
+}
+
+.formulario input:focus+label>span {
+    color: grey;
+}
+
+.formulario textarea:focus {
+    width: 650px;
+    height: 110px;
+    transition: all linear 0.8s;
+}
+
+.formulario textarea:focus+label {
+    font-size: 18px;
+    transition: all 0.8s;
+}
+
+.formulario textarea {
+    width: 400px;
+    height: 40px;
+    padding: 15px;
+    outline: none;
+    border: none;
+    background: transparent;
+    border-bottom: rgb(199, 199, 199) solid 3px;
+    font-size: 22px;
+    font-family: "roboto";
+}
+
+.formulario textarea:not(:placeholder-shown)+label {
+    font-size: 18px;
+}
+
+.formulario textarea:not(:placeholder-shown) {
+    width: 650px;
+    height: 110px;
+    padding: 50px 0 0 15px;
+}
+
+.formulario textarea:focus+label>span {
+    color: grey;
+}
+
+.bg-fotos {
+    height: 300px;
+    margin-top: 80px;
+}
+
+.btn-imagenes {
+    width: 100%;
+    justify-content: center;
+}
+
+.btn-imagenes h2 {
+    text-align: left;
+    color: black;
+}
+
+.fotos {
+    overflow: auto;
+}
+
+.card-scroller {
+    display: flex;
+}
+
+.card {
+    width: 200px;
+    min-width: 200px;
+    position: relative;
+    margin-right: 7px;
+    margin-bottom: 10px;
+    height: 120px;
+}
+
+.card img {
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.card.not-validated img {
+    filter: grayscale(1);
+}
+
+.card:hover.not-validated img {
+    filter: grayscale(1) blur(5px);
+}
+
+.card:hover img {
+    border-radius: 10px;
+    transition: 00.5s;
+    filter: blur(5px);
+    width: 100px;
+    transition: 00.3s;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card .closer {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    color: #fff;
+    background-color: red;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    text-align: center;
+    border-radius: 100%;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.card .validate {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: #fff;
+    background-color: green;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    text-align: center;
+    border-radius: 100%;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.uploader {
+    padding-bottom: 20px;
+}
+
+.container {
+    position: absolute;
+    width: 100%;
+    margin: auto;
+    top: 60px;
+    text-align: center;
+}
+
+.container span {
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #725836ab;
+}
+
+.controls {
+    padding: 10px;
+}
+
+.botons.guardar {
+    display: none;
+}
+
+.botons {
+    box-shadow: inset 0px 1px 0px 0px #dcecfb;
+    background: linear-gradient(to bottom, #bddbfa 5%, #80b5ea 100%);
+    background-color: #bddbfa;
+    border-radius: 6px;
+    border: 1px solid #84bbf3;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #528ecc;
+    width: 20%;
+}
+
+.botons:hover {
+    background: linear-gradient(to bottom, #80b5ea 5%, #bddbfa 100%);
+    background-color: #80b5ea;
+}
+
+.botons:active {
+    position: relative;
+    top: 1px;
+}
+
+.admin-perfil {
+    height: 300px;
+    background: orange;
+}
+
+.precios input {
+    outline: none;
+    width: 150px;
+    height: 38px;
+    background: none;
+    border: none;
+    padding: 10px;
+    font-size: 2em;
+    text-align: center;
+}
+
+input.editor {
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+.datepicker-cell:hover{
+    color: black;
+}
+.datepicker-picker span{
+    color: black;
+}
+.datepicker-picker span:active{
+    color: orange;
+}
+
+.datepicker-cell:not(.disabled):hover {
+    background-color: orange !important;
+  
+}
+.datepicker-header .datepicker-controls .button:hover {
+    background-color: #ffcc6f !important;
+
+}
+.datepicker-controls .button{
+    background-color: orange !important;
+}
+.datepicker-cell.selected, .datepicker-cell.selected{
+    background-color: chocolate !important;
+}
+.datepicker-cell.focused:not(.selected) {
+    background-color: rgba(210, 105, 30, 0.527) !important;
+}
+
+#dni {
+    display: flex;
+    justify-content: left;
+   
+}
+
+#dni>input {
+    width: calc(100% - 60px);
+    color: white;
+}
+
+#dni .choices {
+    width: 70px;
+    height: 40px;
+    margin-bottom: 0;
+    position: relative;
+    left: -10px;
+}
+.cr-slider {
+    padding-top: 45px !important;
+}
+
+
+#dni .choices .choices__inner {
+    min-height: auto;
+    width: 45px;
+    background: transparent;
+    border: none;
+}
+
+#dni .choices .choices__list {
+    width: 250%;
+}
+
+
+.row {
+    display: flex;
+}
+
+.side {
+    width: 250px;
+    background-color: #6d7677;
+    padding: 20px;
+    box-shadow: 0 8px 16px 0 rgb(0, 0, 0);
+    height: 100%;
+    margin-top: 20px;
+    border-radius: 4px;
+    border: 5px double grey;
+}
+
+.fakeimg-perfil img {
+    display: block;
+    margin: 0 auto;
+}
+
+.card-wrapper {
+    width: 300px;
+    padding: 10px;
+}
+
+.card-wrapper img {
+    margin-top: 8px;
+    border-radius: 5px;
+}
+
+.card-wrapper button {
+    background-color: #6d7677;
+    box-shadow: 0 8px 16px 0 rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+}
+
+.card-wrapper h4,
+p {
+    color: white;
+}
+
+.card-wrapper p {
+    font-style: italic
+}
+
+.card-wrapper h3 {
+    color: orange;
+}
+
+.card-wrapper button:hover {
+    box-shadow: 0px 0px 16px 0 rgba(255, 166, 0, 0.616);
+}
+
+.container {
+    padding: 2px 16px;
+    width: 90%;
+}
+
+.main-up-inmuebles {
+    font-size: 20px;
+    padding: 20px;
+    display: flex;
+    font-family: "roboto ";
+    flex-wrap: wrap;
+}
+
+.card-wrapper button a:active {
+    text-decoration: none;
+}
+
+.card-wrapper button a:link {
+    text-decoration: none;
+}
+
+.card-wrapper button a:visited {
+    text-decoration: none;
+}
+
+.card-wrapper img {
+    width: 338px;
+    height: 190px;
+}
+
+.upload-image {
+    display: none;
+    position: fixed;
+    top: calc(50% - 110px);
+    left: calc(50% - 140px);
+    width: 220px;
+    height: 280px;
+    padding: 20px;  
+    border: 2px solid #ccc;
+    background-color: #333;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: column;  
+    z-index: 3;
+}
+.upload-image .croppiecontainer {
+    width: 210px;
+    height: 210px;
+}
+.upload-image-bg {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #3339;
+    z-index: 2;
+}
+.change-pwd {
+    display: none;
+    position: fixed;
+    top: calc(50% - 60px);
+    left: calc(50% - 50px);
+    width: 220px;
+    height: 120px;
+    padding: 20px;  
+    border: 2px solid #ccc;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: column;  
+    z-index: 3;
+    font-size: .875rem;
+    background-color: #333;
+    box-shadow: 0 4px 8px 0 black;
+    color: black;
+    border-radius: .25rem;
+    cursor: pointer;
+    text-transform: none;
+    overflow: visible;
+    line-height: 1.15;
+    margin: 0;
+    transform: translateZ(0);
+    transition: -webkit-transform .25s ease-out;
+    transition: transform .25s ease-out;
+    transition: transform .25s ease-out, -webkit-transform .25s ease-out;
+}
+.change-pwd-bg {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #3339;
+    z-index: 2;
+}
+.change-pwd input {
+    padding: 10px;
+    margin-top: 15px;
+}
+#btn-aceptar-photo{
+    width: 160px;
+    background: #1f53c5;
+    border: none;
+    padding: 5px;
+    color: white;
+    margin: 16px 0;
+    font-size: 14px;
+    border-radius: 5px;
+}

@@ -1,0 +1,134 @@
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .logo{
+    display: flex;
+    width: 170px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .boton{  
+    background-color: orange;
+    border: 1px black solid;
+    border-radius: 3px;
+    padding: 4px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 90px;
+ }
+ .boton a{
+     color: black;
+ }
+ .boton a:active{
+    text-decoration: none;
+  }
+  .boton a:link{
+     text-decoration: none;
+  }
+  .boton a:visited{
+    text-decoration: none;
+  }
+
+  
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family:Roboto;
+  }
+
+  .bg-image {
+    display: flex;
+    background-image: url("landscape-429319_1920.jpg");
+    filter: blur(8px);
+
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+
+  .bg-text {
+    color: white;
+    font-weight: bold; 
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+.workspace{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 265px;
+    border: 15px solid #f1f1f1;
+    background-color: rgba(0,0,0, 0.4);
+    border-radius: 5px;
+    box-shadow: 1px 1px 20px 0px rgb(172, 172, 172);
+  }
+.wrapper-text-btn{
+    text-align: center;
+
+  }
+.wrapper-text-btn h1 {
+  font-size: 40px;
+  margin:auto
+}
+.wrapper-text-btn h4 {
+  font-size: 19px;
+}
+
+  .container .btn {
+    background-color:white;
+    color:black;
+    font-size: 18px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    width: 150px;
+  }
+  
+  .container .btn:hover {
+    background-color: #f90;
+    transition: .3s;
+  }
+
+  .container .btn1 {
+    background-color: white;
+    color: black;
+    font-size: 18px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    width: 150px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+  
+  
+  .container .btn1:hover {
+    background-color: #f90;
+    transition: .3s;
+  }
+
+
+   

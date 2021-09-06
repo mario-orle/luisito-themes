@@ -1,0 +1,72 @@
+.header{
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 341px;
+   padding: 10px;
+   background-color: black;
+   box-shadow: 1px 1px 20px 0px #000000;
+    
+}
+.logo{
+    display: flex;
+    width: 170px;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn-contac {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 4px;
+  color: #00E2FF;
+  font-family: Open Sans;
+  padding: 5px;
+  background-color: #000000;
+  box-shadow: 1px 1px 20px 0px #000000;
+  -webkit-box-shadow: 1px 1px 20px 0px #000000;
+  -moz-box-shadow: 1px 1px 20px 0px #000000;
+  text-shadow: 1px 1px 20px #000000;
+  border: solid #00E2FF 2px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 90px;
+ }
+ 
+ .btn-contac:hover {
+    background: #000000;
+    border: solid #00E2FF 5px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    text-decoration: none;
+ }
+.btn-contac a {
+    color: white;
+}
+.btn-contac a:active{
+  text-decoration: none;
+}
+.btn-contac a:link{
+   text-decoration: none;
+}
+.btn-contac a:visited{
+  text-decoration: none;
+}
+
+.main{
+    margin-top: 210px;
+    margin-left:15px; 
+}
+.container{
+    padding: 20px;
+    border-radius: 5px;
+    background-color: rgb(214, 214, 214);
+    height: 250px;
+}
+ 
+  body {
+    background-image: url('../fondo-form.jpg');
+  }

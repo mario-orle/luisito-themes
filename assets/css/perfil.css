@@ -1,0 +1,95 @@
+#regForm {
+    background-color: #ffffff;
+    margin: 100px auto;
+    padding: 40px;
+    width: 70%;
+    min-width: 300px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    border-bottom: orange 3px solid;
+    border-radius: 3px;
+}
+
+h1 {
+    text-align: center;
+}
+
+input {
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    border: 1px solid #aaaaaa;
+}
+p select {
+    width: 100%;
+    padding: 10px;
+
+}
+
+input.invalid {
+    background-color: #ffdddd;
+}
+
+.tab {
+    display: none;
+}
+
+button {
+    background-color: #4CAF50;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+#prevBtn {
+    background-color: #bbbbbb;
+}
+
+.step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+}
+
+.step.active {
+    opacity: 1;
+}
+
+.step.finish {
+    background-color: #4CAF50;
+}
+
+.main .choices__inner {
+    min-height: auto;
+    height: 30px;
+}
+
+.admin-perfil {
+    height: 300px;
+    background: orange;
+}
+
+label[for=foto] {
+    width: 100%;
+    background-color: #dddd;
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#foto-preview img {
+    display: block;
+    margin: 0 auto;
+    max-width: 500px;
+}
+

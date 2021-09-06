@@ -1,0 +1,235 @@
+.inm-mbl{
+    background-color: white;
+    -webkit-box-shadow: inset 0px 0px 5px 0px #000000; 
+    box-shadow: inset 0px 0px 5px 0px #000000;
+    height: auto;
+    padding: 10px;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+.inm-mbl h2{
+margin-bottom: 0;
+    text-align: center;
+    color: orange;
+}
+
+
+
+.collapsible {
+    background-color: #777;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+
+  }
+  
+  .collapsible:hover{
+      background-color: orange;
+  }
+  .espacio-caja{
+      margin-bottom: 10px;
+  }
+  
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 18px;
+    background-color: #f1f1f1;
+    margin-bottom: 8px;
+    border-bottom: 5px solid #FF9800;
+    border-radius: 0px 0px 10px 10px;
+  }
+  .content i{
+      color: rgb(56, 56, 56);
+  }
+  .content td{
+      color: grey;
+  }
+
+
+
+  .perfil-inmueble{
+    background: #777;
+    border-radius: 5px;
+    border: 5px ridge;
+    -webkit-box-shadow: 0px 0px 10px 0px #000000; 
+    box-shadow: 0px 0px 10px 0px #000000;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    margin: 0 auto;
+   
+}
+.perfil-inmueble h2{
+    color: orange;
+    text-align: left;
+}
+.perfil-inmueble h3{
+    color: rgb(56, 56, 56);
+}
+.fila{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: left;
+    justify-content: center;
+}
+.fila > div {
+    width: 23%;
+    height: 50px;
+    padding: 1%;
+  
+}
+
+.fila > div input{
+    width: 90%;
+    height: 35px;
+}
+#valor{
+    display: flex;
+}
+.inmueble{
+    width: 100%;
+}
+.inmueble .choices__inner{
+    width: calc(100% - 17px)!important;
+    min-height: 25px !important;
+}
+.localizacion{
+    width: 100%;
+   
+}
+.localizacion .fila .direccion{
+    width: 48%;
+}
+.localizacion .fila .choices__inner{
+    width: calc(100% - 17px)!important;
+    min-height: 25px !important;
+}
+.superficie{
+    width: 100%;
+}
+
+.superficie .fila > div{
+    display: flex;
+    width: 30%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.divisiones{
+    width: 100%;
+}
+.divisiones .fila > div{
+    display: flex;
+    width: 30%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.descripcion{
+}
+.descripcion .fila textarea{
+    width: 100%;
+    height: 150px;
+    
+}
+.caracteristicas{
+    width: 100%;
+}
+.caracteristicas .fila > div input {
+    width: 40px;
+    height: 0px;
+}
+
+.bg-fotos{
+    display: flex;
+    width: calc(100% - 35px);
+    justify-content: space-between;
+   margin: 0 auto;
+   padding: 10px;
+    
+}
+
+.funciones-buton{
+    display: flex;
+    width:calc(100% - 35px);
+    align-items: center;
+    justify-content: space-between;
+}
+.boton{
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+}
+.botons{
+    width: 100px;
+    box-shadow: 0px 0px 0px 2px #777;
+    background: linear-gradient(to bottom, rgb(128, 123, 123) 5%, rgb(65, 54, 54) 100%);
+    background-color: #4c5463;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 13px;
+    padding: 5px 15px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #283966;
+}
+.funciones-buton h2{
+color: orange;
+text-align: left;
+}
+
+/* contrastar con mario si esto va a ser util o una puta mierda */
+
+.bg-slider{
+    background: #777;
+    border-radius: 5px;
+    border: 5px ridge;
+    -webkit-box-shadow: 0px 0px 10px 0px #000000; 
+    box-shadow: 0px 0px 10px 0px #000000;
+    margin: 0 auto;
+}
+.slider {
+	width: 100%;
+	overflow-x: auto;
+    
+}
+
+.slider ul {
+	display: flex;
+	padding: 0;
+    overflow-x: auto;
+}
+
+.slider li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider img {
+	width: 150px;
+}
+
+ 
+.descripcion  {
+    overflow: auto;
+    font-size: 12px;
+}
+
+.descripcion .fila > div, .descripcion .localizacion .fila .direccion {
+    width: 44%;
+}
+
+.caracteristicas .fila > div {
+    width: 47%;
+}
+.descripcion .fila label {
+    white-space: nowrap;
+}

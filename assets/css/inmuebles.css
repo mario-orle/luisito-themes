@@ -1,0 +1,106 @@
+.agregar-wrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.card-agregar {
+    width: 255px;
+    max-width: 255px;
+    margin-top: 10px;
+    margin-right: 30px;
+}
+
+.img-agregar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card-agregar button {
+    background-color: #434b4d;
+    box-shadow: 0 8px 16px 0 rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+}
+
+.card-agregar h4,
+p {
+    color: white;
+}
+
+.card-agregar p {
+    font-style: italic
+}
+
+.card-agregar h3 {
+    color: orange;
+}
+
+.card-agregar button:hover {
+    box-shadow: 0px 0px 16px 0 rgba(255, 166, 0, 0.616);
+}
+
+.card-wrapper {
+    width: 350px;
+    padding: 10px;
+}
+
+.card-wrapper button {
+    width: 100%;
+    height: 100%;
+}
+
+.card-wrapper img {
+    margin-top: 8px;
+    border-radius: 5px;
+    width: 338px;
+    height: 190px;
+}
+
+.card-wrapper button {
+    background-color: #434b4d;
+    box-shadow: 0 8px 16px 0 rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+}
+
+.card-wrapper h4,
+p {
+    color: white;
+}
+
+.card-wrapper p {
+    font-style: italic
+}
+
+.card-wrapper h3 {
+    color: orange;
+}
+
+.card-wrapper button:hover {
+    box-shadow: 0px 0px 16px 0 rgba(255, 166, 0, 0.616);
+}
+
+.container {
+    padding: 2px 16px;
+    width: 90%;
+}
+
+.main-up-inmuebles {
+    font-size: 20px;
+    padding: 20px;
+    display: flex;
+    font-family: "roboto ";
+}
+
+.card-wrapper button a:active {
+    text-decoration: none;
+}
+
+.card-wrapper button a:link {
+    text-decoration: none;
+}
+
+.card-wrapper button a:visited {
+    text-decoration: none;
+}

@@ -1,0 +1,122 @@
+.perfil-asesor {
+    width: 100%;
+    max-width: 1000px;
+    min-width: 500px;
+    height: 610px;
+    background-color: white;
+    display: flex;
+    flex-flow: wrap;
+    margin: 0 auto;
+}
+
+.img-perfil-asesor {
+    width: 150px;
+    padding: 40px;
+    margin-top: 50px;
+}
+
+.form-perfil {
+    margin-top: 10px;
+    width: calc(100% - 270px);
+}
+
+.form-perfil h2 {
+    color: orange;
+    text-align: left;
+}
+
+.form-perfil h3 {
+    color: black;
+    text-align: left;
+}
+.form-perfil p{
+    color: grey;
+}
+
+.container {
+    display: flex;
+}
+
+.documentacion-puntual {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.botons {
+    margin-top: 20px;
+    width: 110px;
+}
+
+.doc-punt {
+    height: 280px;
+    margin-bottom: 20px;
+    border-radius: 13px;
+    width: 100%;
+    max-width: 690px;
+    min-width: 450px;
+}
+
+.fila-documento {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.botons {
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    width: 150px;
+    margin-top: 15px;
+    text-align: center;
+    margin-left: 20px;
+box-shadow: 0px 0px 0px 2px #777;
+background: linear-gradient(to bottom, rgb(128, 123, 123) 5%, rgb(65, 54, 54) 100%);
+background-color: #4c5463;
+border-radius: 5px;
+font-size: 13px;
+padding: 5px 15px;
+text-shadow: 0px 1px 0px #283966;
+}
+
+
+
+.botons:hover {
+    background: linear-gradient(to bottom, rgb(252, 205, 119) 5%, rgb(252, 205, 119)100%);
+    background-color: rgba(0, 0, 0, 0);
+    background-color: orange;
+}
+
+form {
+    display: inline-block;
+}
+.botons:active {
+    position: relative;
+    top: 1px;
+}
+.scroll-text{
+    overflow-x: hidden;
+    height: 265px;
+    width: calc(100% - 0px);
+}
+
+.text-documentos {
+    width: 650px;
+
+}
+
+.fila-documento {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.fila-documento-2 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}

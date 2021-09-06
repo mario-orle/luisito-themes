@@ -1,0 +1,194 @@
+ul {
+    list-style-type: none;
+}
+h2{
+    font-family: "roboto";
+    text-align: center;
+}
+.gestor-citas {
+    display: flex;
+    flex-flow: column;
+    height: 345px;
+}
+
+
+.main-calendar {
+    width: 100%;
+}
+
+.citas-programadas {
+    color: black;
+    background: white;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 black;
+    height: 345px;
+    margin-top: 30px;
+}
+
+.text-programadas {
+    font-size: 13px;
+    font-family: "roboto";
+    padding: 10px;
+    height: 325px;
+}
+.text-programadas span{
+    color: rgb(0, 221, 0);
+}
+.text-programadas h2{
+    color: black;
+}
+
+table{
+    width: 100%;
+}
+.scroller{
+    overflow: auto;
+    width: 100%;
+  }
+.text-programadas th{
+    padding: 5px;
+    text-decoration: underline;
+}
+.text-programadas tr{
+ text-align: center;
+}
+
+.icono-citas{
+display: flex;
+width: 50%;
+align-items: center;
+margin-left:170px;
+margin-top:15px;
+margin-bottom: 10px;
+}
+.icono-citas img{
+width: 20%;
+padding: 10px;
+margin-top: 10px;   
+}
+.icono-citas h2{
+    color: black;
+}
+
+
+#foo .datepicker-picker {
+    width: 100%;
+    box-shadow: 0 4px 8px 0 black;
+}
+
+#foo .datepicker-picker span {
+    border-radius: 0;
+   
+}
+
+#foo .datepicker-grid {
+    width: 100%;
+    height: 280px;
+    background-color: azure;
+}
+
+#foo .datepicker-cell {
+    background-color:transparent;
+}
+
+#foo .datepicker-cell.selected {
+    background-color: orange;
+}
+
+#foo span.datepicker-cell.day.next {
+    visibility: hidden;
+}
+
+#foo .days-of-week span {
+    color: orange;
+}
+
+#foo .days-of-week {
+    background-color: #437184;
+    width: 100%;
+}
+
+#foo .datepicker-view .days .datepicker-cell,
+.datepicker-view .dow {
+    flex-basis: 13.286%;
+}
+#foo .datepicker-header .datepicker-controls .button {
+    border-color: grey;
+    font-weight: 700;
+}
+#foo  span{
+    color:black;
+}
+
+#popup {
+    overflow: auto;
+    position: fixed;
+    width: 570px;
+    height: 400px;
+    background-color:#333;
+    box-shadow: 0 4px 8px 0 black;
+    color: black;
+    font-size: 13px;
+    border-radius: 1%;
+    box-shadow: 0 4px 8px 0 black;
+    position: fixed;
+    left: calc(50% - 570px / 2);
+    top: calc(50vh - 400px / 2);
+    display: none;
+    z-index: 5;
+    opacity: 0;
+
+}
+.popup-icon img{
+    width: 150px;
+    height: auto;
+    padding: 15px;
+
+}
+.popup-icon{
+    float: right;
+
+}
+#popup-bg {
+    position: fixed;
+    background-color: #3333;
+    opacity: 0;
+    transition: opacity .5s;
+}
+#popup.active{
+    display: block;
+    opacity: 1;
+    
+}
+#popup-bg.active{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    opacity: 1;
+    transition: opacity .5s;
+}
+.popup-text{
+    padding: 25px;
+    
+}
+.popup-text h3{
+    color: #ff8000;
+}
+.popup-text p{
+    color: white;
+}
+.popup-text hr{
+    margin-left: 0;
+    width: 300px;
+    border: 1px solid white;
+    margin-bottom: 2px;
+    
+}
+
+
+
+.fc-toolbar-chunk {
+    white-space: nowrap;
+}

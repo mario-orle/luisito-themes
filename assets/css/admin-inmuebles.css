@@ -1,0 +1,67 @@
+.collapsible {
+    display: flex;
+    justify-content: space-between;
+    background-color: #777;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    margin-bottom:10px ;
+  }
+  
+  .active, .collapsible:hover {
+    background-color: orange;
+  }
+  
+  .funciones{}
+  
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+  }
+  .main-up-inmuebles{
+      display: flex;
+  }
+  .card-wrapper{
+    width: 250px;
+    padding: 15px 5px 15px 5px;
+   
+  }
+  .card-wrapper img{
+    margin-top: 8px;
+    border-radius: 5px;
+  }
+  
+  .card-wrapper button{
+    background-color: #434b4d;
+    box-shadow: 0 8px 16px 0 rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .card-wrapper h4, p{
+    color: white;
+  }
+  .card-wrapper p{
+    font-style: italic
+  }
+  .card-wrapper h3{
+    color: orange;
+  
+  }
+  
+  .card-wrapper button:hover {
+    box-shadow: 0px 0px 16px 0 rgba(255, 166, 0, 0.616);
+  }
+
+
+  .card-wrapper a {
+    text-decoration: none;
+  }

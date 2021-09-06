@@ -1,0 +1,46 @@
+.main-contact{
+    display: flex;
+    flex-flow: column;
+    width: calc(100% - 30px);
+    margin: 0 auto;
+    justify-content: space-between;
+    background-color: transparent;
+    padding: 10px;  
+    border: 3px black solid;
+}
+.contact button{
+    border: 1px black solid;
+    width: 100%;
+    margin-bottom:2px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    border-radius: 3px;
+    font-size: 16px;
+   
+}
+.contact img{
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+}
+.img-contact{
+    display: flex;
+    align-items: center;
+}
+.main {
+}
+.main.admin-chat {
+    display: block;
+    width: 100%;
+    z-index: 5;
+}
+.main-contact .contact.unread::before {
+    content: '';
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    background-color: red;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}

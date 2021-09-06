@@ -1,0 +1,195 @@
+.perfil-asesor {
+    display: flex;
+    justify-content: space-around;
+    width: 1200px;
+}
+
+.asesor-admin {
+    background-color: white;
+    width: 750px;
+    border-radius: 5px;
+    border-bottom: 3px orange solid;
+    box-shadow: 0px 2px 7px 1px rgba(0, 0, 0, 0.77);
+}
+
+.info-asesor {
+    display: flex;
+    justify-content: space-around;
+    width: 580px;
+}
+
+.img-asesor {
+    width: 240px;
+    margin-top: 45px;
+}
+
+.img-asesor img {
+    border-radius: 100%;
+}
+
+.new-asesor img {
+    width: 200px;
+    margin-top: 20px;
+}
+
+.new-asesor button {
+    background-color: white;
+    width: 350px;
+    height: 400px;
+    border-radius: 5px;
+    border-bottom: 3px orange solid;
+    box-shadow: 0px 2px 7px 1px rgba(0, 0, 0, 0.77);
+}
+
+.new-asesor h2 {
+    color: black;
+}
+
+.new-asesor button:hover {
+    transition: 0.4s;
+    background: rgba(255, 221, 159, 0.555);
+    cursor: pointer;
+}
+
+.new-asesor a:active {
+    text-decoration: none;
+}
+
+.new-asesor a:link {
+    text-decoration: none;
+}
+
+.new-asesor a:visited {
+    text-decoration: none;
+}
+
+.main-formulario {
+    display: flex;
+    flex-flow: column;
+}
+
+.main-formulario h2 {
+    text-align: left;
+    color: #f90;
+}
+
+.formulario {
+    font-size: 16px;
+    width: 200px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.formulario span {
+    padding: 10px;
+    color: grey;
+}
+
+.formulario label {
+    font-size: 16px;
+    position: absolute;
+    width: 100%;
+    margin: auto;
+    top: 20px;
+    z-index: 10;
+}
+
+.formulario input:focus {
+    width: 350px;
+    height: 60px;
+    transition: all linear 0.8s;
+}
+
+.formulario input:focus+label {
+    font-size: 14px;
+    transition: all 0.8s;
+}
+
+.formulario input {
+    width: 250px;
+    height: 20px;
+    padding: 15px;
+    outline: none;
+    border: none;
+    background: transparent;
+    border-bottom: rgb(199, 199, 199) solid 3px;
+    font-size: 18px;
+}
+
+.formulario input:not(:placeholder-shown)+label {
+    font-size: 12px;
+}
+
+.formulario input:not(:placeholder-shown) {
+    width: 350px;
+    height: 40px;
+    padding: 40px 0 0 10px;
+}
+
+.formulario input:focus+label>span {
+    color: #f90;
+}
+
+.caracteristicas {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.upload-image {
+    display: none;
+    position: fixed;
+    top: calc(50% - 110px);
+    left: calc(50% - 140px);
+    width: 220px;
+    height: 280px;
+    padding: 20px;  
+    border: 2px solid #ccc;
+    background-color: #333;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: column;  
+    z-index: 3;
+}
+.upload-image .croppiecontainer {
+    width: 210px;
+    height: 210px;
+}
+.upload-image-bg {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #3339;
+    z-index: 2;
+}
+.change-pwd {
+    display: none;
+    position: fixed;
+    top: calc(50% - 60px);
+    left: calc(50% - 140px);
+    width: 220px;
+    height: 120px;
+    padding: 20px;  
+    border: 2px solid #ccc;
+    background-color: #333;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: column;  
+    z-index: 20;
+}
+.change-pwd-bg {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #3339;
+    z-index: 2;
+}
+.change-pwd input {
+    padding: 10px;
+}

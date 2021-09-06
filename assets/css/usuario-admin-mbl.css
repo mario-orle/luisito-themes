@@ -1,0 +1,99 @@
+.inm-mbl{
+    background-color: white;
+    -webkit-box-shadow: inset 0px 0px 5px 0px #000000; 
+    box-shadow: inset 0px 0px 5px 0px #000000;
+    height: auto;
+    padding: 10px;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+.inm-mbl h2{
+margin-bottom: 0;
+    text-align: center;
+    color: orange;
+}
+
+
+
+.collapsible {
+    background-color: #777;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+
+  }
+  
+  .collapsible:hover{
+      background-color: orange;
+  }
+  .espacio-caja{
+      margin-bottom: 10px;
+  }
+  
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 18px;
+    background-color: #f1f1f1;
+    margin-bottom: 8px;
+    border-bottom: 5px solid #FF9800;
+    border-radius: 0px 0px 10px 10px;
+  }
+  .content i{
+      color: rgb(56, 56, 56);
+  }
+  .content td{
+      color: grey;
+  }
+
+  .pop-asesor, .pop-oferta{
+    width: calc(100% - 42px);
+    display:none;
+  }
+
+  .pop-asesor.is-open, .pop-oferta.is-open {
+      display: block;
+      position: fixed;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+        width: 100%;
+  }
+  .pop-asesor .modal__overlay, .pop-oferta .modal__overlay {
+    display: block;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #6666;
+    width: 100%;
+
+  }
+  .pop-asesor .modal__container, .pop-oferta .modal__container {
+    padding: 10px;
+    background: #777;
+    border-radius: 5px;
+    border: 5px ridge;
+    -webkit-box-shadow: 0px 0px 10px 0px #000000; 
+    box-shadow: 0px 0px 10px 0px #000000;
+    margin: 0 auto;
+  }
+
+  .funciones {
+    width: 95px;
+  }

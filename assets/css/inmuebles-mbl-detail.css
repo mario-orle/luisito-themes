@@ -1,0 +1,169 @@
+.wrapper {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  background-color: whitesmoke;
+  border: 2px solid silver;
+  margin: 1em;
+}
+.wrapper h1 {
+  margin: 5px;
+  padding: 5px;
+  color: orange;
+  text-shadow: 1px 1px 1px #000000;
+}
+.wrapper p {
+  margin-bottom: 1em;
+}
+.boton-siguiente {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 15px;
+  margin-bottom: 5px;
+}
+
+.paginacion ul {
+  width: 100%;
+  display: flex;
+  padding: 0;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+.paginacion li {
+  width: 25%;
+  list-style: none;
+  border: 1px solid orange;
+  background-color: grey;
+  padding: 5px;
+  text-align: center;
+}
+.paginacion li:hover {
+  -webkit-box-shadow: 0px 0px 15px 1px #000000;
+  box-shadow: 0px 0px 15px 1px #000000;
+}
+.paginacion li.selected {
+  scale: 1.2;
+  background-color: rgb(63, 62, 62);
+}
+.paginacion a {
+  text-decoration: none;
+  color: white;
+}
+.desplegable select {
+  width: 94%;
+  flex-flow: column;
+  display: flex;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+.localizacion {
+  width: 100%;
+}
+.fila {
+  display: flex;
+  width: 100%;
+  text-align: left;
+  justify-content: center;
+  flex-flow: column;
+  padding: 5px;
+}
+
+.fila label {
+  white-space: nowrap;
+}
+.fila input {
+  width: 90%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.fila textarea {
+  width: 94%;
+  height: 50px;
+  padding-left: 0px;
+}
+
+.mySlides {
+  display: none;
+}
+.posicion {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.caja-volver {
+  position: relative;
+  background: grey;
+  border: 2px solid orange;
+  width: 120px;
+  padding: 5px;
+  margin: 15px;
+}
+.caja-volver a {
+  color: white;
+  text-decoration: none;
+}
+.caja-volver:after,
+.caja-volver:before {
+  right: 103%;
+  top: 50%;
+  border: solid transparent;
+  content: "";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.caja-volver:after {
+  border-color: rgba(136, 183, 213, 0);
+  border-right-color: grey;
+  border-width: 13px;
+  margin-top: -13px;
+  margin-right: -4px;
+}
+.caja-volver:before {
+  border-color: rgba(194, 225, 245, 0);
+  border-right-color: orange;
+  border-width: 16px;
+  margin-top: -16px;
+  margin-right: -2px;
+}
+
+.caja-volver:active {
+  text-decoration: none;
+}
+.caja-volvera:link {
+  text-decoration: none;
+}
+.caja-volver:visited {
+  text-decoration: none;
+}
+.fotografias {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.choices {
+  max-width: 90%;
+}
+.check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  padding: 10px;
+}
+.check > div {
+  width: 80%;
+  display: flex;
+  flex-flow: row-reverse;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.check > div label {
+  min-width: 60%;
+}
+.card-ft {
+  padding: 10px;
+}
