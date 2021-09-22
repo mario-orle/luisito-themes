@@ -291,6 +291,7 @@ if (!current_user_can("administrator")) {
 if (!$creator_of_user) {
       ?>
       <a id="perfil" href="/admin-asesor"><i class="fas fa-user-circle"></i>ADMIN ASESOR</a>
+      <a id="prices" href="/price-edition"><i class="fas fa-user-circle"></i>ADMIN PRECIOS</a>
       <?php
 }
       ?>

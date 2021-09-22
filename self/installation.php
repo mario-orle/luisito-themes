@@ -320,6 +320,14 @@ function create_our_pages() {
             'page_template' => 'mbl/page-crear-inmueble-mbl.html.php'
         ));
     }
+    if (!get_page_by_title('price-edition')) {
+        wp_insert_post(array(
+            'post_title' => 'price-edition',
+            'post_status' => 'publish',
+            'post_type' => 'page',
+            'page_template' => 'page-price-edition.html.php'
+        ));
+    }
     
     if (!get_user_meta(1, 'meta-creados-usuarios-prueba')) {
         update_user_meta(1, 'meta-creados-usuarios-prueba', '1');

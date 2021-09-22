@@ -62,24 +62,59 @@ function getPOBLACION($id) {
   return $acc;
 }
 
-function getGraphDataById($id) {
+function saveGraphDataById($id, $data) {
+  $raw = returnFullDataOfGraph();
+  $graphData = json_decode($raw, true);
+  $graphToWrite = [];
+  copy(__DIR__ . "/data.json", __DIR__ . "/data" . date("Y-m-d") . ".json");
+  foreach ($graphData as $key1 => $first_level) {
+    $first_levelToWrite = [];
+    if ($first_level["value"] == $id) {
+      $first_levelToWrite = $data;
+    } else {
+      $first_levelToWrite = $first_level;
+    }
+    foreach ($first_level["children"] as $key2 => $second_level) {
+      $second_levelToWrite = [];
+      if ($second_level["value"] == $id) {
+        $second_levelToWrite = $data;
+      } else {
+        $second_levelToWrite = $second_level;
+      }
+      foreach ($second_level["children"] as $key3 => $third_level) {
+        $third_levelToWrite = [];
+        if ($third_level["value"] == $id) {
+          $third_levelToWrite = $data;
+        } else {
+          $third_levelToWrite = $third_level;
+        }
+        foreach ($third_level["children"] as $key4 => $fourth_level) {
+          $fourth_levelToWrite = [];
+            
+          if ($fourth_level["value"] == $id) {
+            $fourth_levelToWrite = $data;
+          } else {
+            $fourth_levelToWrite = $fourth_level;
+          }
+          $third_levelToWrite[$key4] = $fourth_levelToWrite;
+        }
+        $second_levelToWrite[$key3] = $third_levelToWrite;
+      }
+      $first_levelToWrite[$key2] = $second_levelToWrite;
+    }
+    $graphToWrite[$key1] = $first_levelToWrite;
 
-  $requests = json_decode(file_get_contents(__DIR__ . "/requests.json"), true);
-  if (in_array($id, $requests)) {
-    // ya lo tenemos añadido
-  } else {
-    $requests[] = $id;
   }
+  file_put_contents(__DIR__ . "/data.json", json_encode($graphToWrite));
+}
 
-  file_put_contents(__DIR__ . "/requests.json", json_encode($requests));
-
-
+function getGraphDataById($id) {
   $raw = returnFullDataOfGraph();
   $graphData = json_decode($raw, true);
   $acc = [];
   foreach ($graphData as $key => $first_level) {
     if ($first_level["value"] == $id) {
-      return [["name" => $first_level['name'], 'graph' => $first_level['graph']], 'level' => 'CCAA'];
+      return [["name" => $first_level['name'], 'graph' => $first_level['graph'], 'level' => 'CCAA']];
     }
     foreach ($first_level["children"] as $key => $second_level) {
       if ($second_level["value"] == $id) {

@@ -193,13 +193,13 @@ get_header();
             label: name,
             backgroundColor: colors[(counter) % colors.length],
             borderColor: colors[(counter) % colors.length],
-            data: ds.graph.data.columns[1],
+            data: ds.graph.data.map(d => d.y),
             pointRadius: 1
           });
           counter++;
         });
       })
-      let lengthColumn = res[0][0].graph.data.columns[0].length;
+      let lengthColumn = res[0][0].graph.data.length;
 
       const precios = inmueblesLocIds.map((inmuebleData, idx) => {
         const datasetEstimados = {
@@ -228,7 +228,7 @@ get_header();
       });
 
       const data = {
-        labels: res[0][0].graph.data.columns[0],
+        labels: res[0][0].graph.data.map(el => el.x),
         datasets
       };
       var formatter = new Intl.NumberFormat('de-DE', {
@@ -255,7 +255,6 @@ get_header();
               },
               callbacks: {
                 label: function(data) {
-                  console.log(arguments);
                   //var datasetLabel = data.datasets[tooltipItem.datasetIndex].label || 'Other';
                   //var label = data.labels[tooltipItem.index];
                   return data.dataset.label + ": " + formatter.format(data.raw) + "€/m2";

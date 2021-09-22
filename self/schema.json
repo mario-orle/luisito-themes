@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "title": "Nombre",
+      "readonly": true
+    },
+    "level": {
+      "type": "string",
+      "title": "Entidad",
+      "readonly": true
+    },
+    "graph": {
+      "title": "",
+      "type": "object",
+      "properties": {
+        "data": {
+          "title": "Datos gráfico",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "x": {
+                "type": "string",
+                "title": "Fecha"
+              },
+              "y": {
+                "type": "number",
+                "title": "€/m2"
+              }
+            },
+            "required": [
+              "x",
+              "y"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "required": [
+    "name",
+    "graph",
+    "level"
+  ]
+}
